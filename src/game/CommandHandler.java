@@ -8,12 +8,9 @@ public class CommandHandler {
     }
     public String handleCommand(String command, String... parameters) {
         String currentRoomName = gamePlan.getCurrentRoom().getName();
-        // Проверяем, если игрок в "Сorridor"
         if (currentRoomName.equals("Сorridor")) {
-            // Если орк не убит и команда не go и не attack Orc
             if (!gamePlan.isOrcDead() && !(command.equals("go") || (command.equals("attack") && parameters.length > 0 && parameters[0].equals("Orc")))) {
-                // Орк атакует
-                gamePlan.setGameLoosed(true);  // Проигрыш
+                gamePlan.setGameLoosed(true);
                 return "The orc sees your hesitation and strikes! You have been defeated.";
             }
         }
