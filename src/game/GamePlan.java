@@ -28,7 +28,7 @@ public class GamePlan {
         Room entrance = new Room("Entrance", "You are at the entrance of the fortress. The witchers told you that a totem lies here, one that reveals the future.");
         Room hall = new Room("Hall", "The main hall of the fortress. Uther is waiting for you here.");
         Room corridor = new Room("Сorridor", "A long room. A fierce orc warrior walking here.");
-        Room altar = new Room("g", "Altar for worship");
+        Room altar = new Room("Altar", "Altar for worship");
         Room portalRoom = new Room("Portal", "Magical portal room, though it's unclear how it works.");
 
         Item mask = new Item("Troll mask", "Troll witch doctor mask.", true);
