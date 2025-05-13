@@ -16,7 +16,7 @@ public class GamePlan {
 
     public GamePlan() {
         rooms = new HashMap<>();
-        backpack = new Backpack(2); // Рюкзак на 2 слота
+        backpack = new Backpack(2);
         random = new Random();
         createRooms();
         gameWon = false;
@@ -34,7 +34,7 @@ public class GamePlan {
         Item mask = new Item("Troll mask", "Troll witch doctor mask.", true);
         Item memorial = new Item("Memorial", "Fallen Warriors Memorial", false);
         Item totem = new Item("Totem", "The war totem.", true);
-        Item book = new Item("Book", "Some adventure book.", true); // Ненужный предмет
+        Item book = new Item("Book", "Some adventure book.", true);
 
         corridor.addItem(mask);
         hall.addItem(memorial);
@@ -68,7 +68,6 @@ public class GamePlan {
         return isOrcDead;
     }
 
-    // Сеттер для isOrcDead
     public void setOrcDead(boolean isOrcDead) {
         this.isOrcDead = isOrcDead;
     }
