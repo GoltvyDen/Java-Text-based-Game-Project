@@ -11,7 +11,7 @@ class BackpackTest {
 
     @BeforeEach
     void setUp() {
-        backpack = new Backpack(2); // Устанавливаем вместимость рюкзака 2
+        backpack = new Backpack(2);
         sword = new Item("Sword", "Old sword", true);
         shield = new Item("Shield", "Wooden shield", true);
     }
