@@ -25,7 +25,7 @@ class GamePlanTest {
 
     @Test
     void testGetItemFromRoom() {
-        gamePlan.setCurrentRoom(gamePlan.getCurrentRoom().getExits().get("hall")); // Переход в зал
+        gamePlan.setCurrentRoom(gamePlan.getCurrentRoom().getExits().get("hall"));
         Item memorial = gamePlan.getItem("Memorial");
         assertNotNull(memorial, "Memorial should be found in Hall");
         assertEquals("Memorial", memorial.getName(), "Found item should be Memorial");
